@@ -35,6 +35,18 @@
 		display: none;
 	}
 
+#txt_over{ 
+		width: 1024px;
+		height: 738px;
+		z-index: 8;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		background: url('../imgs/txt_over.png') no-repeat 0 0;
+		opacity: 0;
+		display: none;
+	}
+
 #txt_ended{ 
 		width: 1024px;
 		height: 768px;

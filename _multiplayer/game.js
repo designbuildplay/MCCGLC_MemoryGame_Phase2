@@ -184,6 +184,9 @@ function onClientDisconnect() {
 	// Broadcast removed player to connected socket clients
 	this.broadcast.emit("remove player", {id: this.id});
 	
+	// call end all game Function
+	//endAllGames()
+	this.broadcast.emit("end all");
 };
 
 // New player has joined
@@ -218,7 +221,9 @@ function killServer(){
 function endAllGames(){
 	util.log("End all the games..");
 	this.broadcast.emit("end all");
-
+	// CLEAR THE ARRARYS
+	allReady.length = 0;
+	endCount = 0;
 }
 
 /**************************************************

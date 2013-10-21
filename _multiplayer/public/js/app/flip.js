@@ -605,33 +605,79 @@
 
 function cheatGame(){
 					
-					//stop the timer
-					clearInterval(timerCount);
+					// if( gamePlaying == true){
+					// 	//stop the timer
+					// 	clearInterval(timerCount);
 
-					// DISPLAY THE WIN OR WELL DONE MSG ACCORDING TO THE TIME COMPETING with DELAY
-					TweenLite.to($('#container'), 0, {opacity:1, delay:.5, onComplete:txtWin });
+					// 	// DISPLAY THE WIN OR WELL DONE MSG ACCORDING TO THE TIME COMPETING with DELAY
+					// 	TweenLite.to($('#container'), 0, {opacity:1, delay:.5, onComplete:txtWin });
+						
+					// 	// restart the flips ready for next game
+					// 	TweenLite.to($('#container'), 0, {opacity:1, delay:2, onComplete:restartFlips });
+						
+					// 	//flipbackAll()
+					// 	match1 = false;
+					// 	match2 = false;
+					// 	match3 = false;
+					// 	match4 = false;
+					// 	match5 = false;
+					// 	match6 = false;
+					// 	touchCount = 3;
+
+					// 	//hide btn
+					// 	var cheat = document.getElementById("cheat");
+					// 	cheat.style.display = "none";
+
+					// 	console.log("Game Cheated / Ended")
+
+					// 	playerEnd()
+					// }
+					// else{
+					// 	console.log("END THE PRE MENU")
+					// 	// hide elements
+					// 	$('#screen_start').css('visibility','hidden');
+					// 	$('#screen_user').css('visibility','hidden');
+					// 	$('#screen_wait').css('visibility','hidden');
+					// 	$('#cardlist').css('visibility','hidden');
+					// 	$('#count_num').css('visibility','hidden');
+					// 	$('#clock').css('visibility','hidden');
+
+					// 	// show message
+					// 	$('#txt_over').css('display','inline')
+					// 	TweenLite.to($('#txt_over'), 1, {opacity:1 });
+
+					// 	// CALLS RELOAD FUNCTION
+					// 	var ran = Math.random()*4000 + 3000;
+					// 	siteReload = setInterval(reloadSite, 4000); 
+					// }
+
+						console.log("END THE PRE MENU")
+						// hide elements
+						$('#txt_matched').css('visibility','hidden');
+						$('#txt_winner').css('visibility','hidden');
+						$('#txt_looser').css('visibility','hidden');
+						$('#txt_ended').css('visibility','hidden');
+						$('#screen_start').css('visibility','hidden');
+						$('#screen_user').css('visibility','hidden');
+						$('#screen_wait').css('visibility','hidden');
+						$('#cardlist').css('visibility','hidden');
+						$('#count_num').css('visibility','hidden');
+						$('#clock').css('visibility','hidden');
+
+						// show message
+						$('#txt_over').css('display','inline')
+						TweenLite.to($('#txt_over'), 1, {opacity:1 });
+
+						// CALLS RELOAD FUNCTION
+						var ran = Math.random()*4000 + 3000;
+						siteReload = setInterval(reloadSite, 4000); 
 					
-					// restart the flips ready for next game
-					TweenLite.to($('#container'), 0, {opacity:1, delay:2, onComplete:restartFlips });
-					
-					//flipbackAll()
-					match1 = false;
-					match2 = false;
-					match3 = false;
-					match4 = false;
-					match5 = false;
-					match6 = false;
-					touchCount = 3;
-
-					//hide btn
-					var cheat = document.getElementById("cheat");
-					cheat.style.display = "none";
-
-					console.log("Game Cheated / Ended")
-
-					playerEnd()
 }
 
+function reloadSite(){
+	console.log("reload ")
+	location.reload(true);
+}
 
 function restartFlips(){
 

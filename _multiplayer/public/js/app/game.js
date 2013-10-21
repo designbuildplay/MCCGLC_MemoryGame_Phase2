@@ -264,6 +264,7 @@ function playerEnd(){
 
 function endGame(data){
 
+	console.log("FORCE END ** ")
 	var winner = data.winner
 	var txtwin = document.getElementById("winner");
 	var cardlist = document.getElementById("cardlist");
@@ -383,10 +384,10 @@ function endGameCall(){
 function endAllGames(){
 	console.log("game forced to END.")
 
-	if(localPlayer.playerReady == true){ //checks if game var in progress
+	//if(localPlayer.playerReady == true){ //checks if game var in progress
 		totalSeconds = "-"; //sets the time none
 		cheatGame();
-	}
+	//}
 }
 
 // Find player by ID
