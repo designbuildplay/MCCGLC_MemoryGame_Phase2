@@ -62,18 +62,18 @@ html, body {
 			font-size: 50px;
 			z-index: 99;
 			padding: 10px;
-			top:300px;
+			top:110px;
 			width: 1024px;
 			text-align: center;
 		}
 
-		#btn_replay{
-			position: relative;
+		#btn_replay, #btn_score{
+			position: absolute;
 			z-index: 99;
 			padding: 10px;
-			top:420px;
+			top:500px;
 			left:50%;
-			margin-left: -164px;
+			margin-left: 34px;
 			width: 300px;
 			border:2px solid white;
 			text-align: center;
@@ -89,7 +89,14 @@ html, body {
 			-webkit-box-shadow: 0 15px 50px rgba(0,0,0,0.2);
 		}
 
-		#btn_replay:hover{
+		#btn_score{
+			/*position: absolute;
+			top:400px;*/
+			margin-left: -364px;
+
+		}
+
+		#btn_replay:hover, #btn_score:hover{
 			 border: 2px solid #F8B883;
 			 background-color: #774b9b;
 			 box-shadow: 0 15px 50px rgba(0,0,0,0.6);
