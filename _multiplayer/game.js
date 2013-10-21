@@ -23,6 +23,7 @@ function init() {
 	
 		// Create an empty array to store players
 		players = [];
+		//playerPos = []; // to store there position
 
 		// Create an empty array to store players game Times
 		playerTimes = [];
@@ -184,9 +185,15 @@ function onClientDisconnect() {
 	// Broadcast removed player to connected socket clients
 	this.broadcast.emit("remove player", {id: this.id});
 	
-	// call end all game Function
-	//endAllGames()
-	this.broadcast.emit("end all");
+	// call end all game Functions if 1-4 players leaves the game
+	if(players.length < 4){
+		this.broadcast.emit("end all");
+		// CLEAR THE ARRARYS
+		players.length = 0;
+		allReady.length = 0;
+		endCount = 0;
+	}
+	
 };
 
 // New player has joined
@@ -221,9 +228,6 @@ function killServer(){
 function endAllGames(){
 	util.log("End all the games..");
 	this.broadcast.emit("end all");
-	// CLEAR THE ARRARYS
-	allReady.length = 0;
-	endCount = 0;
 }
 
 /**************************************************
