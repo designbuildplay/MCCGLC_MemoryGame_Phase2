@@ -1,0 +1,96 @@
+
+#txt_matched{ 
+		width: 178px;
+		height: 17px;
+		z-index: 3;
+		position: absolute;
+		left: 50%;
+		margin-left: -89px;
+		top: 643px;
+		background: url('../imgs/txt_matched.png') no-repeat 0 0;
+		opacity: 0;
+	}
+
+#txt_winner{ 
+		width: 1024px;
+		height: 768px;
+		z-index: 3;
+		position: absolute;
+		left: 0px;
+		top: -30px;
+		background: url('../imgs/txt_winner.png') no-repeat 0 0;
+		opacity: 0;
+		display: none;
+	}
+
+#txt_looser{ 
+		width: 1024px;
+		height: 768px;
+		z-index: 3;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		/*background: url('../imgs/txt_looser.png') no-repeat 0 0;*/
+		opacity: 0;
+		display: none;
+	}
+
+#screen_leader{ 
+		width: 1024px;
+		height: 768px;
+		z-index: 5;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		background: url('../imgs/screen_leader.png') no-repeat 0 0;
+		opacity: 0;
+		display: none;
+	}
+
+
+
+#screen_start{ 
+		width: 1024px;
+		height: 768px;
+		z-index: 3;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		background: url('../imgs/screen_start.png') no-repeat 0 0;
+		opacity: 0;
+		display: none;
+	}
+
+#screen_user{ 
+		width: 1024px;
+		height: 768px;
+		z-index: 3;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		background: url('../imgs/screen_user.png') no-repeat 0 0;
+		opacity: 0;
+		display: none;
+	}
+
+#screen_wait{ 
+		width: 1024px;
+		height: 768px;
+		z-index: 3;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		background: url('../imgs/screen_wait.png') no-repeat 0 0;
+		opacity: 0;
+		display: none;
+	}
+
+#count_num{
+    color: #fff;
+    font-size: 348px;
+    position: absolute;
+    z-index: 99;
+    top: 160px;
+    width: 1024px;
+    text-align: center;
+}

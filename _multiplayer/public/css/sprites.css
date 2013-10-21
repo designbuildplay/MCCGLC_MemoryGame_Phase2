@@ -1,0 +1,205 @@
+
+#txt_matched{ 
+		width: 178px;
+		height: 17px;
+		z-index: 3;
+		position: absolute;
+		left: 50%;
+		margin-left: -89px;
+		top: 643px;
+		background: url('../imgs/txt_matched.png') no-repeat 0 0;
+		opacity: 0;
+	}
+
+#txt_winner{ 
+		width: 1024px;
+		height: 768px;
+		z-index: 3;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		background: url('../imgs/txt_winner.png') no-repeat 0 0;
+		opacity: 0;
+		display: none;
+	}
+
+#txt_looser{ 
+		width: 1024px;
+		height: 768px;
+		z-index: 3;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		background: url('../imgs/txt_looser.png') no-repeat 0 0;
+		opacity: 0;
+		display: none;
+	}
+
+#txt_ended{ 
+		width: 1024px;
+		height: 768px;
+		z-index: 3;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		background: url('../imgs/txt_ended.png') no-repeat 0 0;
+		opacity: 0;
+		display: none;
+	}
+
+#screen_leader{ 
+		width: 1024px;
+		height: 768px;
+		z-index: 5;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		background: url('../imgs/screen_leader.png') no-repeat 0 0;
+		opacity: 0;
+		display: none;
+	}
+
+#screen_start{ 
+		width: 1024px;
+		height: 768px;
+		z-index: 99;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		background: url('../imgs/screen_start.png') no-repeat 0 0;
+		opacity: 0;
+		display: none;
+	}
+
+#screen_user{ 
+		width: 1024px;
+		height: 768px;
+		z-index: 3;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		background: url('../imgs/screen_user.png') no-repeat 0 0;
+		opacity: 0;
+		font-size: 240px;
+		text-align: center;
+		line-height: 768px;
+		display: none;
+	}
+
+#screen_wait{ 
+		width: 1024px;
+		height: 768px;
+		z-index: 3;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		background: url('../imgs/screen_wait.png') no-repeat 0 0;
+		opacity: 0;
+		display: none;
+	}
+
+#count_num{
+    color: #fff;
+    font-size: 348px;
+    position: absolute;
+    z-index: 99;
+    top: 160px;
+    width: 1024px;
+    text-align: center;
+    display: none;
+}
+
+#user_head{
+	color: #e0aa95;
+    font-size: 25px;
+    position: absolute;
+    z-index: 99;
+    top: 120px;
+    left: 37px;
+}
+
+#host{
+	position: absolute;
+	width: 1024px;
+	z-index: 99;
+	text-align: center;
+	color: #fff;
+	/*opacity: 0;*/
+	display: none;
+}
+
+
+#leaderlist{
+	width: 1024px;
+	text-align: left;
+	display: none;
+	top:272px;
+	left:290px;
+	position:absolute;
+}
+
+#leaderlist li{
+	margin-top: 10px;
+	font-size: 35px;
+	text-align: left;
+}
+
+#winbar{
+	position: absolute;
+	width: 1024px;
+	height: 43px;
+	top: -285px;
+	display: none;
+	left: 0px;
+	z-index: 99;
+	background: url('../imgs/winbar.png') no-repeat 0 0;
+	position: absolute;
+}
+
+#winner{
+	position: absolute;
+	width: 859px;
+	height: 21px;
+	top: 296px;
+	left: 80px;
+	z-index: 99;
+	background: url('../imgs/winner.png') no-repeat 0 0;
+	position: absolute;
+	display: none;
+}
+
+
+#cheat{  padding: 20px; background-color: #583177; cursor: pointer;
+	position: absolute; z-index: 99;
+	top: 800px; left: 200px;
+	display: none;
+}
+
+#serverkill{
+	padding: 10px; background-color: #583177; cursor: pointer;
+	position: absolute; z-index: 99; font-size: 12px;
+	top: 790px; left: 410px; 
+	display: none;  width: 150px;  text-align: center;
+}
+
+#endgame{
+	padding: 20px; background-color: #583177; color: #fff; 
+	cursor: pointer;
+	position: absolute; z-index: 99;
+	top: 800px; left: 200px; width: 200px; text-align: center;
+	display: none;
+}
+
+
+#replaybtn{
+	background: url('../imgs/replaybtn.png') no-repeat 0 0;
+	position: absolute;
+	z-index: 999;
+	top:525px;
+	left: 50%;
+	margin-left: -165px;
+	width: 317px;
+	height: 73px;
+	display: none;
+	opacity: 0;
+}
