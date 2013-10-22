@@ -8,7 +8,7 @@ function clock(){
     
     totalSeconds = 0;
     
-     $('#clock').prepend('<div id="clock"><label id="minutes">00</label>:<label id="seconds">00</label></div>');
+     $('#clock').prepend('<label id="minutes">00</label>:<label id="seconds">00</label>');
 
        //Sets clock to 00:00
        $('#clock > #seconds').html("00");
@@ -40,6 +40,9 @@ function countdown(){
     var countdownDiv = document.getElementById("count_num");
     countdownDiv.style.display = "inline";
     countdownDiv.style.opacity = "1";
+    var waitscrn = document.getElementById("screen_wait");
+    waitscrn.style.visibility = "hidden";
+
     $("#count_num").html("3");
 
     var timer = setInterval(function(){

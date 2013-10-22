@@ -663,7 +663,9 @@ function cheatGame(){
 						$('#cardlist').css('visibility','hidden');
 						$('#count_num').css('visibility','hidden');
 						$('#clock').css('visibility','hidden');
-
+						$('#host').css('visibility','hidden');
+						$('#replaybtn').css('opacity',0);
+						
 						// show message
 						$('#txt_over').css('display','inline')
 						TweenLite.to($('#txt_over'), 1, {opacity:1 });

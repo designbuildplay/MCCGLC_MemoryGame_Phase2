@@ -75,6 +75,7 @@ html, body {
 			position: relative;
 			top: 60px;
 			left: 38px;
+			width: 300px;
 			font-size: 14px;
 			line-height: 18px;
 			padding-left: 20px;
@@ -272,8 +273,8 @@ html, body {
 		    font-size: 30px;
 		    position: absolute;
 		    z-index: 6;
-		    top: 57px;
-		    left: 120px;
+		    top: 91px;
+		    left: 170px;
 		    height: 40px;
 		}
 

@@ -191,17 +191,18 @@ function thisPlayer(data){
 			var hostScn = document.getElementById("host");
 			var btnEndall = document.getElementById("endgame");
 			var btnKill = document.getElementById("serverkill");
+			var screen_toomany = document.getElementById("screen_tomany");
 
 			playerImg.style.display = "none"
 			clock.style.display = "none";
-			leaderlist.style.display = "inline";
-			leader.style.display = "inline";
-			leader.style.opacity = 1;
-			hostScn.style.display = "inline";
-			btnKill.style.display = "inline";
+			// leaderlist.style.display = "inline";
+			screen_toomany.style.display = "inline";
+			screen_toomany.style.opacity = 1;
+			// hostScn.style.display = "inline";
+			// btnKill.style.display = "inline";
 			
-			btnEndall.style.top = "540px";
-			btnEndall.style.left = "375px";
+			// btnEndall.style.top = "540px";
+			// btnEndall.style.left = "375px";
 
 			host = true;
 
@@ -307,17 +308,17 @@ function endPosition(data){
 	 	break;
 
 	 	case 2: 		
-	 		winbar.style.top = "340px";
+	 		winbar.style.top = "345px";
 	 		winbar.style.display = "inline";
 	 	break;
 
 	 	case 3:
-	 		winbar.style.top = "395px";
+	 		winbar.style.top = "402px";
 	 		winbar.style.display = "inline";
 	 	break;
 
 	 	case 4:
-	 		winbar.style.top = "450px";
+	 		winbar.style.top = "460px";
 	 		winbar.style.display = "inline";
 	 	break;
 	}
@@ -349,11 +350,12 @@ function restart(){
 	 var hostScrn = document.getElementById("host");
 	 var btn = document.getElementById("replaybtn");
 	 var wintxt = document.getElementById("winner");
-
+	 var scrnwait = document.getElementById("screen_wait");
 	 // RESETS ALL GAME VARIABLES AND USERS PLAY AGAIN
 	 totalSeconds = 0;
 	 localPlayer.setTime(totalSeconds);
 	 
+	 scrnwait.style.visibility = "visible";
 	 wintxt.style.display = "none";
 	 btn.style.display = "none";
 	 btn.style.opacity = 0;
