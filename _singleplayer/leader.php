@@ -27,153 +27,33 @@
 
 <div id="wrapper">EXELON PATCH
 
-		<div id="container">
+	<div id="container">
 
 		<!-- main menu nav -->
 		<div id="nav"><a href="../">BACK TO MENU</a></div>
-		<!-- START SCREEN ===========================    -->
-		<div id="screen_start"></div>
-
-		<!-- USER SCREEN ===========================    -->
-		<div id="screen_user"></div>
-
-		<!-- LOADING PLAYERS SCREEN ===========================    -->
-		<div id="screen_wait"></div>
+		
 
 		<!-- LEADERBOARD SCREEN ===========================    -->
-		<div id="screen_leader">
+		<div id="screen_leader_display">
 				<div id="finaltime"></div>
-				<a href="#"><div id="btn_score">SUBMIT TIME</div></a>
-				<a href="../_singleplayer"><div id="btn_replay">PLAY AGAIN</div></a>
+				
+				<a href="../_singleplayer"><div id="btn_replay" style="top:570px">PLAY AGAIN</div></a>
 
 				<div id="board">
 					<?php include 'select.php'; ?>
 				</div>
 		</div>
 
-		<!-- clock counter ==== -->
-		<div id="clock"></div>
+	</div>
 
-		<!-- game countdown === -->
-		<div id="count_num">3</div>
-
-		<ul id="cardlist"> 
-
-			<li>
-				<!-- CARD ELEMENT ===========================    -->
-				<div class="card1 click panel circle" id="card1" >
-					<div class="front"></div>
-					<div class="back"></div>
-				</div>
-			</li>
-
-			<li>
-				<!-- CARD ELEMENT ===========================    -->
-				<div class="card1 click panel circle" id="card2"  >
-					<div class="front"></div>
-					<div class="back"></div>
-				</div>
-			</li>
-
-			<li>
-				<!-- CARD ELEMENT ===========================    -->
-				<div class="card2 click panel circle" id="card3" >
-					<div class="front"></div>
-					<div class="back"></div>
-				</div>
-			</li>
-
-			<li>
-				<!-- CARD ELEMENT ===========================    -->
-				<div class="card2 click panel circle"  id="card4" >
-					<div class="front"></div>
-					<div class="back"></div>
-				</div>
-			</li>
-
-
-
-			<li>
-				<!-- CARD ELEMENT ===========================    -->
-				<div class="card3 click panel circle"  id="card5" >
-					<div class="front"></div>
-					<div class="back"></div>
-				</div>
-			</li>
-
-			<li>
-				<!-- CARD ELEMENT ===========================    -->
-				<div class="card3 click panel circle"  id="card6" >
-					<div class="front"></div>
-					<div class="back"></div>
-				</div>
-			</li>
-
-			<li>
-				<!-- CARD ELEMENT ===========================    -->
-				<div class="card4 click panel circle"  id="card7" >
-					<div class="front"></div>
-					<div class="back"></div>
-				</div>
-			</li>
-
-			<li>
-				<!-- CARD ELEMENT ===========================    -->
-				<div class="card4 click panel circle"  id="card8" >
-					<div class="front"></div>
-					<div class="back"></div>
-				</div>
-			</li>
-
-
-			<li>
-				<!-- CARD ELEMENT ===========================    -->
-				<div class="card5 click panel circle"  id="card9" >
-					<div class="front"></div>
-					<div class="back"></div>
-				</div>
-			</li>
-
-			<li>
-				<!-- CARD ELEMENT ===========================    -->
-				<div class="card5 click panel circle"  id="card10" >
-					<div class="front"></div>
-					<div class="back"></div>
-				</div>
-			</li>
-
-			<li>
-				<!-- CARD ELEMENT ===========================    -->
-				<div class="card6 click panel circle"  id="card11" >
-					<div class="front"></div>
-					<div class="back"></div>
-				</div>
-			</li>
-
-
-			<li>
-				<!-- CARD ELEMENT ===========================    -->
-				<div class="card6 click panel circle"  id="card12" >
-					<div class="front"></div>
-					<div class="back"></div>
-				</div>
-			</li>
-
-		</ul>
-
-		<div id="txt_matched"></div>
-		<div id="txt_winner"></div>
-		<div id="txt_looser"></div>
-
-		</div>
 </div>
 
 <!-- LOAD IN THE APP SCRIPTS ====================== -->
 
-<script src="js/app/random_li.js"></script>
+<!-- <script src="js/app/random_li.js"></script>
 <script src="js/app/clock.js"></script>
 <script src="js/app/sprites.js"></script>
-<script src="js/app/flip.js"></script>
+<script src="js/app/flip.js"></script> -->
 
 </body>
 

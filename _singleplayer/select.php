@@ -17,7 +17,7 @@ if (mysqli_connect_errno())
   	echo "Failed to connect to MySQL: " . mysqli_connect_error();
   }
 
-$result = mysqli_query($con,"SELECT * FROM mccglc_memorygame_leader ORDER BY score LIMIT 5" );
+$result = mysqli_query($con,"SELECT * FROM mccglc_memorygame_leader ORDER BY score LIMIT 10" );
 
 echo "<table border='0' width='400px'>";
 

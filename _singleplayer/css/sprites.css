@@ -35,25 +35,31 @@
 		display: none;
 	}
 
-#screen_leader{ 
+#screen_leader, #screen_leader_display{ 
 		width: 1024px;
 		height: 768px;
 		z-index: 5;
 		position: absolute;
 		left: 0px;
 		top: 0px;
-		/*background: url('../imgs/screen_leader.png') no-repeat 0 0;*/
-		background-position: 0px 80px;
 		opacity: 0;
 		display: none;
 	}
+
+#screen_leader_display{ 
+	opacity: 1;
+	display: inline;
+	top: -40px;
+	background: url('../imgs/screen_leader.png') no-repeat 0 0;
+	background-position: 0px 0px;
+}
 
 #board{
 	font-size: 18px;
 	position: absolute; width: 400px;
 	left: 50%;
 	margin-left: -220px;
-	top:340px;
+	top:260px;
 }
 
 #screen_start{ 

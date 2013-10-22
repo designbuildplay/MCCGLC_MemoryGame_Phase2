@@ -46,7 +46,7 @@
 				<form>
 					<input type="text" id="nametxt" placeholder="YOUR NAME">
 				</form>
-				<a href="#"><div id="btn_score">SUBMIT TIME</div></a>
+				<a href="leader.php"><div id="btn_score">SUBMIT TIME</div></a>
 				<a href="../_singleplayer"><div id="btn_replay">PLAY AGAIN</div></a>
 
 
