@@ -32,7 +32,7 @@ function init() {
 		endCount = 0;
 
 		// Set up Socket.IO to listen on port 8000
-		socket = io.listen(8000);
+		socket = io.listen(9001);
 
 		// Configure Socket.IO
 		socket.configure(function() {
@@ -198,6 +198,9 @@ function onClientDisconnect() {
 
 // New player has joined
 function onNewPlayer(data) {
+	util.log("data is..." + this.id);
+	var playID = this.id;
+
 	// Create a new player
 	var newPlayer = new Player(0, false);
 	newPlayer.id = this.id;
@@ -205,15 +208,18 @@ function onNewPlayer(data) {
 	// Broadcast new player to connected socket clients
 	this.broadcast.emit("new player", {id: newPlayer.id, x: newPlayer.getId() });
 
-	// Send existing players to the new player
+				// Send existing players to the new player
 	var i, existingPlayer;
-	for (i = 0; i < players.length; i++) {
-		existingPlayer = players[i];
-		this.emit("new player", {id: existingPlayer.id, x: existingPlayer.getId() });
-	};
-		
+		for (i = 0; i < players.length; i++) {
+					existingPlayer = players[i];
+					this.emit("new player", {id: existingPlayer.id, x: existingPlayer.getId() });
+		};
+					
 	// Add new player to the players array
 	players.push(newPlayer);
+
+	util.log("player added..." + playID);
+	
 };
 
 

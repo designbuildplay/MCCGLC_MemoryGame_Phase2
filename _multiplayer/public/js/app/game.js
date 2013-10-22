@@ -30,19 +30,21 @@ function init() {
 	setPlaya = false;
 	playerWinner = true;
 	host = false;
+	createPlayer = false;
 
 	// Initialise the local player
 	localPlayer = new Player(playerTimes, thisReady);
 
 	// Initialise socket connection
 	 //socket = io.connect("http://192.168.168.100", {port: 8000, transports: ["websocket"]});
-	socket = io.connect("http://localhost", {port: 8000, transports: ["websocket"]}); /// LOCALHOST
+	//socket = io.connect("http://localhost", {port: 9001, transports: ["websocket"]}); /// LOCALHOST
+	socket = io.connect("http://memorygame.designbuildplay.co.uk", {transports: ["websocket"]}); /// LOCALHOST
 
 	// Initialise remote players array
 	remotePlayers = [];
 
 	// set value for the number of players
-	playersNum = remotePlayers.length + 1
+	playersNum = remotePlayers.length
 	localPlayer.setPos(playersNum)
 	console.log ("player Pos is " + localPlayer.getPos())
 	// Start listening for events
@@ -87,14 +89,16 @@ var setEventHandlers = function() {
 // Socket connected
 function onSocketConnected() {
 
-	console.log("Connected to socket server " + localPlayer.getId() );
-	$("#playersNum").html( localPlayer.getId() ); // ALL PLAYERS IN LIST
-	$("#playerNum").html( localPlayer.getId() );	// INDIVIDUAL PLAYER
+	if(createPlayer == false){
+		createPlayer = true;
+		console.log("Connected to socket server " + localPlayer.getId() );
+		$("#playersNum").html( localPlayer.getId() ); // ALL PLAYERS IN LIST
+		$("#playerNum").html( localPlayer.getId() );	// INDIVIDUAL PLAYER
 
-	// Send local player data to the game server
-	socket.emit("new player", {id: localPlayer.getId() });
-
-
+		// Send local player data to the game server
+		socket.emit("new player", {id: localPlayer.getId() });
+	}
+	createPlayer = true;
 };
 
 // Socket disconnected
@@ -124,7 +128,6 @@ function onNewPlayer(data) {
 	$("#playersNum").html( playersNum ); // UPDATE the player list ALL PLAYERS IN LIST
 
 	
-	//console.log("play num = " +playaNum + " " + localPlayer.getId())
  };
 
 
