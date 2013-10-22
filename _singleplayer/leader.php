@@ -43,13 +43,12 @@
 		<!-- LEADERBOARD SCREEN ===========================    -->
 		<div id="screen_leader">
 				<div id="finaltime"></div>
-				<form>
-					<input type="text" id="nametxt" placeholder="YOUR NAME">
-				</form>
 				<a href="#"><div id="btn_score">SUBMIT TIME</div></a>
 				<a href="../_singleplayer"><div id="btn_replay">PLAY AGAIN</div></a>
 
-
+				<div id="board">
+					<?php include 'select.php'; ?>
+				</div>
 		</div>
 
 		<!-- clock counter ==== -->

@@ -42,12 +42,19 @@
 		position: absolute;
 		left: 0px;
 		top: 0px;
-		background: url('../imgs/screen_leader.png') no-repeat 0 0;
+		/*background: url('../imgs/screen_leader.png') no-repeat 0 0;*/
+		background-position: 0px 80px;
 		opacity: 0;
 		display: none;
 	}
 
-
+#board{
+	font-size: 18px;
+	position: absolute; width: 400px;
+	left: 50%;
+	margin-left: -220px;
+	top:340px;
+}
 
 #screen_start{ 
 		width: 1024px;

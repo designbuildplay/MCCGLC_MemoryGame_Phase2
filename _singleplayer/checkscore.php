@@ -5,11 +5,8 @@ $con = mysqli_connect("localhost","root","root","designbuildplay_client");
 // Check connection
 if (mysqli_connect_errno())
   {
-  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  echo "Failed to connect to leaderboard: " . mysqli_connect_error();
   }
-
-// $result = mysqli_query($con,"SELECT * FROM mccglc_memorygame_leader ORDER BY score LIMIT 5" );
-
 
 // Check connection
 if (mysqli_connect_errno())
@@ -17,7 +14,7 @@ if (mysqli_connect_errno())
   	echo "Failed to connect to MySQL: " . mysqli_connect_error();
   }
 
-$result = mysqli_query($con,"SELECT * FROM mccglc_memorygame_leader ORDER BY score LIMIT 5" );
+$result = mysqli_query($con,"SELECT * FROM mccglc_memorygame_leader ORDER BY score LIMIT 10" );
 
 echo "<table border='0' width='400px'>";
 
