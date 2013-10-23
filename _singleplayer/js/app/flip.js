@@ -567,7 +567,7 @@ $(document).ready(function(){
 
 
 			// CALL THE RANDOM FUNCTION // ===
-			//randomizeList() // MIX UP THE LIST
+			randomizeList() // MIX UP THE LIST
 			appInit()
 
 			console.log("flip logic loaded.. ")
@@ -588,6 +588,9 @@ $(document).ready(function(){
 					//txtLose()
 					$('#clock').css('opacity', 0)
 					$('#finaltime').prepend( totalSeconds + " seconds" );
+
+					// set the score input field
+					document.getElementById('scoreHidden').value = totalSeconds;
 				} 
 			}
 

@@ -8,7 +8,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="apple-touch-icon-precomposed" href="imgs/appico.png"/> 
     <link rel="apple-touch-startup-image" sizes="1024x748" href="imgs/splash.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 1)" />
-
+    <link rel="icon"  type="image/png" href="imgs/favico.png">
 	<link rel="stylesheet" href="css/flip.css">
 	<link rel="stylesheet" href="css/sprites.css">
 	<script src="js/lib/jquery.js"></script>
@@ -37,7 +37,7 @@
 		<div id="screen_leader_display">
 				<div id="finaltime"></div>
 				
-				<a href="../_singleplayer"><div id="btn_replay" style="top:570px">PLAY AGAIN</div></a>
+				<a href="../_singleplayer"><div id="btn_replay" style="top:570px">CHALLENGE AGAIN</div></a>
 
 				<div id="board">
 					<?php include 'select.php'; ?>
@@ -48,12 +48,9 @@
 
 </div>
 
+
 <!-- LOAD IN THE APP SCRIPTS ====================== -->
 
-<!-- <script src="js/app/random_li.js"></script>
-<script src="js/app/clock.js"></script>
-<script src="js/app/sprites.js"></script>
-<script src="js/app/flip.js"></script> -->
 
 </body>
 

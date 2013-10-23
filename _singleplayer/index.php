@@ -8,7 +8,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="apple-touch-icon-precomposed" href="imgs/appico.png"/> 
     <link rel="apple-touch-startup-image" sizes="1024x748" href="imgs/splash.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 1)" />
-
+    <link rel="icon"  type="image/png" href="imgs/favico.png">
 	<link rel="stylesheet" href="css/flip.css">
 	<link rel="stylesheet" href="css/sprites.css">
 	<script src="js/lib/jquery.js"></script>
@@ -43,11 +43,13 @@
 		<!-- LEADERBOARD SCREEN ===========================    -->
 		<div id="screen_leader">
 				<div id="finaltime"></div>
-				<form>
-					<input type="text" id="nametxt" placeholder="YOUR NAME">
+				 <form id="form1" method="post" action="submit.php" > 
+				 	<input type="hidden" id="scoreHidden" name="score" value="" >
+					<input type="text" id="nametxt" name="name" placeholder="ENTER YOUR NAME">
+					<input name="add" type="submit" id="btn_score" value="SUBMIT TIME" >
 				</form>
-				<a href="leader.php"><div id="btn_score">SUBMIT TIME</div></a>
-				<a href="../_singleplayer"><div id="btn_replay">PLAY AGAIN</div></a>
+				<!-- <a href="leader.php"><div id="btn_score">SUBMIT TIME</div></a> -->
+				<a href="../_singleplayer"><div id="btn_replay">CHALLENGE AGAIN</div></a>
 
 
 		</div>

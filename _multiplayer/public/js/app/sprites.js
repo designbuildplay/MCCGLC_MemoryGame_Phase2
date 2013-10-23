@@ -26,7 +26,7 @@ var replayTouch = $(replaybtn).hammer();
 replayTouch.on("touch", function(ev) {
 		//REPLAY THE GAME!! // ====
 		replayGame()
-
+		
 		// CALL THE RANDOM FUNCTION // ===
 		randomizeList() // MIX UP THE LIST
 });
@@ -134,7 +134,7 @@ function appInit(){
 				screenWait.style.display = "none";
 				TweenLite.to(screenWait, 0, {opacity:0});
 				TweenLite.to(cardList, 1, {opacity:1, delay:.8, onComplete: countdown()}); /// STARTS TIMER ONCE COMPLETE	
-
+				
 				// CALL THE RANDOM FUNCTION // ===
 				randomizeList() // MIX UP THE LIST	
 			}

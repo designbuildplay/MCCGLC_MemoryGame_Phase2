@@ -6,7 +6,7 @@
 		position: absolute;
 		left: 50%;
 		margin-left: -89px;
-		top: 643px;
+		top: 613px;
 		background: url('../imgs/txt_matched.png') no-repeat 0 0;
 		opacity: 0;
 	}
@@ -108,3 +108,7 @@
     width: 1024px;
     text-align: center;
 }
+
+
+
+

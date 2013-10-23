@@ -25,8 +25,10 @@ $idCount = 0;
 
 while($row = mysqli_fetch_array($result))
   {
-  echo "<tr style='text-align:center'>";
-	  echo "<td style='text-align:right; '>" . $row['name'] . "</td>";
+  echo "<tr style='text-align:center' class='fade";
+  echo $idCount;
+  echo "'>";
+	  echo "<td style='text-align:right;'>" . $row['name'] . "</td>";
 	  echo "<td id='" ;
 	  $idCount = $idCount + 1;
 	  echo $idCount;
