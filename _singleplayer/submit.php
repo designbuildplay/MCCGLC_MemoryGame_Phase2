@@ -46,13 +46,13 @@
          <div id="error">Could not enter data:
           '. mysql_error());
 
-        //header('Location: /projects/mccglc/memorygame/phase2/'); //live domain
+        header('Location: /'); //live domain
         //header('Location: /work/MCCGLC/NODE Memorygame/BUILD PHASE2/'); 
         exit();
       }
 
       echo "added";
-      header('Location: /projects/mccglc/memorygame/phase2/_singleplayer/leader.php'); //live domain
+      header('Location: /_singleplayer/leader.php'); //live domain
       //header('Location: /work/MCCGLC/NODE Memorygame/BUILD PHASE2/_singleplayer/leader.php'); //localhost
 
       mysql_close($conn);

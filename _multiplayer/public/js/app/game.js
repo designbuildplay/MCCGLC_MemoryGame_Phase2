@@ -38,7 +38,7 @@ function init() {
 	// Initialise socket connection
 	 //socket = io.connect("http://192.168.168.100", {port: 8000, transports: ["websocket"]});
 	//socket = io.connect("http://localhost", {port: 9001, transports: ["websocket"]}); /// LOCALHOST
-	socket = io.connect("http://memorygame.designbuildplay.co.uk", {transports: ["websocket"]}); /// LOCALHOST
+	socket = io.connect("http://sockets.memoryactivity.net/", {transports: ["websocket"]}); /// LOCALHOST
 
 	// Initialise remote players array
 	remotePlayers = [];
