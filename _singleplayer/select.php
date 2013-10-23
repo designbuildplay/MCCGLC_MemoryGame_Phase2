@@ -1,15 +1,22 @@
 <?php
 
-$con = mysqli_connect("localhost","root","root","designbuildplay_client");
+//DEV
+//$con = mysqli_connect("localhost","root","root","designbuildplay_client");
+
+// //LIVE Designbuildplay =========
+      $db = 'designbuildplay_client';
+      $table = ' mccglc_memorygame_leader';
+      $dbhost = 'localhost';
+      $dbuser = 'dbpadmin';
+      $dbpass = 'd3sign!buildp1@y1320';
+      $con = mysqli_connect($dbhost, $dbuser, $dbpass, $db);
+
 
 // Check connection
 if (mysqli_connect_errno())
   {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
   }
-
-// $result = mysqli_query($con,"SELECT * FROM mccglc_memorygame_leader ORDER BY score LIMIT 5" );
-
 
 // Check connection
 if (mysqli_connect_errno())
