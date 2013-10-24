@@ -162,7 +162,60 @@ a:hover { color:#8e4cc5;}
 
 .clear{clear: both; margin:0px;}
 
+#portrait{
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+  height: 500px;
+  margin-top: 30%;
+  color: white;
+  font-family: 'cantarellbold';
+  display: none;
+}
 
+/*MEDIA QUERY TO SHRINK DOWN TO FIT ON MOBILE ================================== */
+@media all and (max-width: 400px) and (min-width: 300px) {
+
+  /* STYLES GO HERE */ 
+  #container{ 
+        -moz-transform: scale(0.25,0.25); 
+        -moz-transform: scale(0.25,0.25); /* IE 9 */
+        -moz-transform: scale(0.25,0.25);  /* Safari and Chrome */
+        -moz-transform: scale(0.25,0.25); 
+        margin-top: -369px;
+    }
+}
+
+@media all and (max-width: 1000px) and (min-width: 400px) {
+
+  /* STYLES GO HERE */ 
+  #container{ 
+        transform: scale(0.45,0.45);
+        -ms-transform: scale(0.45,0.45);/* IE 9 */
+        -webkit-transform: scale(0.45,0.45); /* Safari and Chrome */
+        -moz-transform: scale(0.45,0.45); 
+        margin-top: -369px;
+    }
+}
+
+@media  only screen and (orientation : portrait) {
+/* Styles */
+  #portrait{
+    display: inline;
+    width: 320px;
+    left: 50%;
+    margin-left: -160px;
+    position: absolute;
+    text-align: center;
+  }
+
+   #container{ 
+    display: none;
+
+   }
+}
+
+/*  ANIMATION STYLES =========================================================== */
 @-webkit-keyframes fadeIn { 
   0% { opacity: 0; }
   100% { opacity: 1; }

@@ -27,7 +27,7 @@
 <body>
 
 <div id="wrapper">EXELON PATCH
-
+<div id="portrait">PLEASE ROTATE THE DEVICE TO LANDSCAPE</div>
 	<div id="container">
 
 		<!-- main menu nav -->
