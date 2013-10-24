@@ -3,6 +3,9 @@ MCCGLC_MemoryGame_Phase2
 + Online version of the ipad memory challenge
 + Multiplayer (4 people) + Single player game modes. 
 + New main menu
++ Single player Leaderboard database
++ Scales down for landscape Mobile
 
-Preview: http://designbuildplay.co.uk/projects/mccglc/memorygame/phase2/
+
+Site: http://memoryactivity.net
 
