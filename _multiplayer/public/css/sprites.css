@@ -198,6 +198,7 @@
 	position: absolute; z-index: 99;
 	top: 800px; left: 200px;
 	display: none;
+	visibility: hidden;
 }
 
 #serverkill{
@@ -205,6 +206,7 @@
 	position: absolute; z-index: 99; font-size: 12px;
 	top: 790px; left: 410px; 
 	display: none;  width: 150px;  text-align: center;
+	visibility: hidden;
 }
 
 #endgame{
@@ -213,6 +215,7 @@
 	position: absolute; z-index: 99;
 	top: 800px; left: 200px; width: 200px; text-align: center;
 	display: none;
+	visibility: hidden;
 }
 
 

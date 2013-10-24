@@ -10,8 +10,6 @@
 
 }
 
-
-
 @font-face {
     font-family: 'cantarellregular';
     src: url('../fonts/Cantarell-Regular-webfont.eot');
@@ -23,8 +21,6 @@
     font-style: normal;
 
 }
-
-
 
 
 html, body {
@@ -39,6 +35,9 @@ html, body {
 		  background: linear-gradient(135deg,  #4b2782 0%,#704891 100%);
 		  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b2782', endColorstr='#704891',GradientType=1 );
 		  overflow: hidden;
+
+		   min-width: 100%;
+	  		min-height:100%;
 	}
 
 #wrapper{
@@ -65,7 +64,7 @@ html, body {
 			      width: 1024px;  
 			      position: absolute; 
 			      left: 50%; margin-left: -512px;
-			      top:50%; margin-top: -369px;
+			      top:50%; margin-top: -379px;
 			      height: 738px;
 			      background: url('../imgs/background.png') no-repeat 0 0;
 			      color: #fff;
@@ -93,7 +92,7 @@ html, body {
 			font-size: 50px;
 			z-index: 99;
 			padding: 10px;
-			top:180px;
+			top:220px;
 			width: 1000px;
 			text-align: center;
 
@@ -105,7 +104,7 @@ html, body {
 			padding: 10px;
 			top:480px;
 			left:50%;
-			margin-left: -170px;
+			margin-left: -165px;
 			width: 300px;
 			border:2px solid white;
 			text-align: center;
@@ -127,8 +126,12 @@ html, body {
 			/*position: absolute;
 			top:400px;*/
 			width: 240px;
-			margin-left: -130px;
-			top:380px;
+			margin-left: 55px;
+			top:331px;
+
+			-webkit-appearance:none;
+		    -moz-appearance:none;
+		    appearance:none;
 			/*font-size: 20px;*/
 		/*	display: none;*/
 
@@ -136,11 +139,13 @@ html, body {
 
 		#nametxt{
 			position: absolute;
-			top:290px;
-			left: 50%; margin-left: -165px;
+			top:336px !important;
+			left: 50%; margin-left: -300px;
 			width: 300px;
-			height: 40px;
+			height: 40px !important;
+			padding: 5px !important;
 			font-size: 20px;
+			line-height: 40px;
 			color: #c3c3c3;
 			text-align: center;
 			background-color:#774b9b;
@@ -148,6 +153,9 @@ html, body {
 			-webkit-border-radius: 5px;
 			-moz-border-radius: 5px;
 			border-radius: 5px;
+			-webkit-appearance:none;
+		    -moz-appearance:none;
+		    appearance:none;
 		}
 
 		#btn_replay:hover, #btn_score:hover{
