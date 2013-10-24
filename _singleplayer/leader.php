@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en-us"><head>
+<html lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>EXELON PATCH</title>
+
+<title>EXELON PATCH : Leaderboard</title>
 	
 	<meta name="viewport" content="user-scalable=no, width=device-width, height=768, initial-scale=1, maximum-scale=2">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
