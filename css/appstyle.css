@@ -198,6 +198,19 @@ a:hover { color:#8e4cc5;}
     }
 }
 
+@media all and (max-height: 400px) and (min-height: 200px) {
+
+  /* STYLES GO HERE */ 
+  #container{ 
+        transform: scale(0.35,0.35);
+        -ms-transform: scale(0.35,0.35);/* IE 9 */
+        -webkit-transform: scale(0.35,0.35); /* Safari and Chrome */
+        -moz-transform: scale(0.35,0.35);
+        margin-top: -402px;
+    }
+}
+
+
 @media  only screen and (orientation : portrait) {
 /* Styles */
   #portrait{
